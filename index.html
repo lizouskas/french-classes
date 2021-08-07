@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mulish"
+    />
+
+    <link rel="shortcut icon" href="img/cheese.svg" />
+
+    <title>French classes</title>
+
+    <style>
+      body {
+        background: #f1f4f5;
+      }
+
+      .main-background {
+        box-shadow: 0px 40px 100px 0px #165e750d;
+        margin: 28px auto;
+        background: white;
+        max-width: 588px;
+        padding: 32px;
+        border-radius: 12px;
+        display: block;
+        height: 90%;
+      }
+
+      .logo-1 {
+        display: block;
+        margin: 0px auto 0px auto;
+      }
+
+      .title-1 {
+        font-size: 28px;
+        font-family: Source Sans Pro;
+        font-weight: 600;
+        line-height: 120%;
+        color: #262626;
+        margin: 32px auto 16px auto;
+        text-align: center;
+      }
+
+      .title-2 {
+        font-size: 24px;
+        font-family: Mulish;
+        font-weight: 200;
+        line-height: 140%;
+        margin: 0px auto 24px auto;
+        color: #8c8c8c;
+        text-align: center;
+      }
+
+      .image-1 {
+        width: 524px;
+        display: block;
+        margin: 0px auto 0px auto;
+        border-radius: 8px;
+      }
+
+      .paragraph-1 {
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        line-height: 200%;
+        color: #595959;
+        margin: 24px auto 24px auto;
+        display: block;
+        font-weight: 400;
+      }
+
+      .link-primary-text {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 160%;
+        font-family: Source Sans Pro;
+        display: flex;
+        color: #092650;
+        margin: 0 auto 32px auto;
+        transition: all 200ms ease;
+      }
+
+      .link-primary-text:hover {
+        color: #3f5170;
+      }
+
+      .icon-arrow {
+        margin: 0 4px 0 0;
+      }
+
+      .line {
+        margin: 0 auto 0 auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .button-primary {
+        padding: 16px 24px;
+        font-weight: 600;
+        margin: 32px auto 32px auto;
+        display: block;
+        background: #165e75;
+        color: white;
+        border-radius: 8px;
+        font-family: Source Sans Pro;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 16px;
+        box-shadow: 0px 2px 4px 0px #7d7d7d29;
+        border: 1px solid #165e75;
+        transition: all 200ms ease;
+        cursor: pointer;
+        line-height: 120%;
+        width: 100%;
+      }
+
+      .button-primary:hover {
+        background-color: #3e6d81;
+        border: 1px solid #3e6d81;
+        box-shadow: none;
+      }
+
+      .signature {
+        font-size: 14px;
+        line-height: 160%;
+        font-family: Source Sans Pro;
+        color: #c9976c;
+        text-align: center;
+        font-weight: 200;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-background">
+      <img class="logo-1" src="img/logo.svg" alt="Frenchies logo" />
+
+      <h1 class="title-1">Become a Frenchie</h1>
+
+      <h2 class="title-2">Learn French through our community</h2>
+
+      <img class="image-1" src="img/img-1.png" alt="woman studying" />
+
+      <p class="paragraph-1">
+        Some people choose French because it is spoken in so many countries.
+        Others enjoy exploring the rich literary, historical and cultural
+        traditions of the French-speaking world. Some just fall in love. If you
+        already chose French, you know your reasons. It doesn’t matter if you
+        are a beginner or an advanced, come and learn with us!
+      </p>
+
+      <a
+        class="link-primary-text"
+        href="https://www.diplomatie.gouv.fr/en/coming-to-france/studying-in-france/learning-french/article/10-good-reasons-for-learning"
+        target="_blank"
+      >
+        <img class="icon-arrow" src="img/arrow-right.svg" /> Read more about
+        “Why study French”
+      </a>
+
+      <div class="line"></div>
+
+      <button class="button-primary">Try out a French class</button>
+
+      <div class="signature">Coded with ❤ by Lisa</div>
+    </div>
+    <script>
+      function courseRegistration() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let level = prompt("Are you a full beginner?");
+
+        level = level.toLowerCase();
+
+        if (level === "yes") {
+          alert(
+            "Bonjour " +
+              name +
+              ", we look forward to teach you French from scratch!"
+          );
+        } else {
+          alert("Bonjour " + name + ", ravie de faire votre connaissance !");
+        }
+      }
+
+      let applyButton = document.querySelector(".button-primary");
+      applyButton.addEventListener("click", courseRegistration);
+    </script>
+  </body>
+</html>
