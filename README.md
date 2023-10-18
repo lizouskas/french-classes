@@ -1,5 +1,2 @@
 # French classes
-I entered the world of front-end development by gaining some 
-knowledge in HTML, CSS, and JavaScript. I used my knowledge 
-of these languages, along with my new skills in VS Code, to build a 
-landing page about French class. The page utilizes JavaScript functions to create user interaction.
+Embarking on the journey of front-end development, I acquired a foundational understanding of HTML, CSS, and JavaScript. Leveraging this knowledge alongside my newfound proficiency in VS Code, I crafted a landing page dedicated to a French class. The page incorporates JavaScript functions to enhance user interaction.
